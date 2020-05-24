@@ -4,3 +4,9 @@
 [submodule "dev-blog"]
 	path = dev-blog
 	url = https://github.com/PierreStephaneVoltaire/dev-blog.git
+[submodule "dev-blog-userAuth"]
+	path = dev-blog-userAuth
+	url = https://github.com/PierreStephaneVoltaire/dev-blog-userAuth.git
+[submodule "dev-blog-userProfile"]
+	path = dev-blog-userProfile
+	url = https://github.com/PierreStephaneVoltaire/dev-blog-userProfile.git
