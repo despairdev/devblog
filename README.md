@@ -35,6 +35,19 @@ This is the main app the user will be interacting with too view posts and intera
 - [ ] Signin/signup
 - [ ] Search
 ### Post API
+![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/dev-blog-post-api)
+![GitHub last commit](https://img.shields.io/github/last-commit/PierreStephaneVoltaire/dev-blog-post-api)
+![GitHub](https://img.shields.io/github/license/PierreStephaneVoltaire/dev-blog-post-api)
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=com.lapots.breed.judge:judge-rule-engine&metric=alert_status)](https://sonarcloud.io/dashboard?id=PierreStephaneVoltaire_dev-blog-post-api)
+![Sonar Tech Debt](https://img.shields.io/sonar/tech_debt/PierreStephaneVoltaire_dev-blog-post-api?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/blocker_violations/PierreStephaneVoltaire_dev-blog-post-api?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/critical_violations/PierreStephaneVoltaire_dev-blog-post-api?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/major_violations/PierreStephaneVoltaire_dev-blog-post-api?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/minor_violations/PierreStephaneVoltaire_dev-blog-post-api?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/info_violations/PierreStephaneVoltaire_dev-blog-post-api?server=https%3A%2F%2Fsonarcloud.io)
+![CI](https://github.com/PierreStephaneVoltaire/dev-blog-post-api/workflows/CI/badge.svg)
+### Description
+This Api provides basic crud operations related to posts
 #### Stack, Services & Tools
 * Nestjs
 * Typescript
