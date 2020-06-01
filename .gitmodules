@@ -10,3 +10,6 @@
 [submodule "dev-blog-userProfile"]
 	path = dev-blog-userProfile
 	url = https://github.com/PierreStephaneVoltaire/dev-blog-userProfile.git
+[submodule "dev-blog-navbar"]
+	path = dev-blog-navbar
+	url = https://github.com/PierreStephaneVoltaire/dev-blog-navbar.git
