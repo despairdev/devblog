@@ -23,6 +23,8 @@ I'm currently using multiple service from the aws stack such as:
  The Architecture is subject to change
 
 ---
+## asana
+> https://app.asana.com/0/1177513246019705/board
 ## Repositories
 ### [Landing page](https://github.com/PierreStephaneVoltaire/dev-blog)
 ![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/pvoltaire)
@@ -47,6 +49,24 @@ This is the main app the user will be interacting with too view posts and intera
 - [X] post viewing
 - [ ] Signin/signup
 - [ ] Search
+### [Navbar](https://github.com/PierreStephaneVoltaire/dev-blog-navbar)
+![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/dev-blog-navbar)
+![GitHub last commit](https://img.shields.io/github/last-commit/PierreStephaneVoltaire/dev-blog-navbar)
+![GitHub](https://img.shields.io/github/license/PierreStephaneVoltaire/dev-blog-navbar)
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=com.lapots.breed.judge:judge-rule-engine&metric=alert_status)](https://sonarcloud.io/dashboard?id=PierreStephaneVoltaire_dev-blog-navbar)
+![Sonar Tech Debt](https://img.shields.io/sonar/tech_debt/PierreStephaneVoltaire_dev-blog-navbar?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/blocker_violations/PierreStephaneVoltaire_dev-blog-navbar?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/critical_violations/PierreStephaneVoltaire_dev-blog-navbar?server=https%3A%2F%2Fsonarcloud.io)
+![GitHub top language](https://img.shields.io/github/languages/top/PierreStephaneVoltaire/dev-blog-navbar)
+### Description
+This is the navbar
+#### Stack, Services & Tools
+* Vue
+* Typescript
+### Features
+- [ ] forgot password ui
+- [ ] Signin/signup ui
+- [ ] Search ui
 ### [Post API](https://github.com/PierreStephaneVoltaire/dev-blog-post-api)
 ![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/dev-blog-post-api)
 ![GitHub last commit](https://img.shields.io/github/last-commit/PierreStephaneVoltaire/dev-blog-post-api)
