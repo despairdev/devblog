@@ -12,8 +12,17 @@ This is a "simple" multi-user blog/cms
 
 ---
 ## Repositories
-
-### Landing page
+### [Landing page](https://github.com/PierreStephaneVoltaire/dev-blog)
+![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/pvoltaire)
+![GitHub last commit](https://img.shields.io/github/last-commit/PierreStephaneVoltaire/pvoltaire)
+![GitHub](https://img.shields.io/github/license/PierreStephaneVoltaire/pvoltaire)
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=com.lapots.breed.judge:judge-rule-engine&metric=alert_status)](https://sonarcloud.io/dashboard?id=PierreStephaneVoltaire_pvoltaire)
+![Sonar Tech Debt](https://img.shields.io/sonar/tech_debt/PierreStephaneVoltaire_pvoltaire?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/blocker_violations/PierreStephaneVoltaire_pvoltaire?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/critical_violations/PierreStephaneVoltaire_pvoltaire?server=https%3A%2F%2Fsonarcloud.io)
+![CI](https://github.com/PierreStephaneVoltaire/dev-blog/workflows/CI/badge.svg)
+### Description
+This is the main app the user will be interacting with too view posts and interact with various other features of the website.
 #### Stack, Services & Tools
 * Angular
 * Typescript
