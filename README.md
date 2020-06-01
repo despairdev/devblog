@@ -1,6 +1,6 @@
 # Dev-Blog
 
-### despair driven development
+### despair driven development ![Website](https://img.shields.io/website?url=http%3A%2F%2Fdespairdrivendevelopment.net)
 > https://despairdrivendevelopment.net/
 
 
@@ -32,6 +32,7 @@ I'm currently using multiple service from the aws stack such as:
 ![Sonar Tech Debt](https://img.shields.io/sonar/tech_debt/PierreStephaneVoltaire_pvoltaire?server=https%3A%2F%2Fsonarcloud.io)
 ![Sonar Violations (long format)](https://img.shields.io/sonar/blocker_violations/PierreStephaneVoltaire_pvoltaire?server=https%3A%2F%2Fsonarcloud.io)
 ![Sonar Violations (long format)](https://img.shields.io/sonar/critical_violations/PierreStephaneVoltaire_pvoltaire?server=https%3A%2F%2Fsonarcloud.io)
+![GitHub top language](https://img.shields.io/github/languages/top/PierreStephaneVoltaire/dev-blog)
 ![CI](https://github.com/PierreStephaneVoltaire/dev-blog/workflows/CI/badge.svg)
 ### Description
 This is the main app the user will be interacting with too view posts and interact with various other features of the website.
@@ -46,7 +47,7 @@ This is the main app the user will be interacting with too view posts and intera
 - [X] post viewing
 - [ ] Signin/signup
 - [ ] Search
-### Post API
+### [Post API](https://github.com/PierreStephaneVoltaire/dev-blog-post-api)
 ![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/dev-blog-post-api)
 ![GitHub last commit](https://img.shields.io/github/last-commit/PierreStephaneVoltaire/dev-blog-post-api)
 ![GitHub](https://img.shields.io/github/license/PierreStephaneVoltaire/dev-blog-post-api)
@@ -57,6 +58,7 @@ This is the main app the user will be interacting with too view posts and intera
 ![Sonar Violations (long format)](https://img.shields.io/sonar/major_violations/PierreStephaneVoltaire_dev-blog-post-api?server=https%3A%2F%2Fsonarcloud.io)
 ![Sonar Violations (long format)](https://img.shields.io/sonar/minor_violations/PierreStephaneVoltaire_dev-blog-post-api?server=https%3A%2F%2Fsonarcloud.io)
 ![Sonar Violations (long format)](https://img.shields.io/sonar/info_violations/PierreStephaneVoltaire_dev-blog-post-api?server=https%3A%2F%2Fsonarcloud.io)
+![GitHub top language](https://img.shields.io/github/languages/top/PierreStephaneVoltaire/dev-blog-post-api)
 ![CI](https://github.com/PierreStephaneVoltaire/dev-blog-post-api/workflows/CI/badge.svg)
 ### Description
 This Api provides basic crud operations related to posts
@@ -81,9 +83,27 @@ This Api provides basic crud operations related to posts
 - [ ] Template publishing
 - [ ] Template colaboration
 - [ ] Template version control
-### User Auth API
+### [User Auth API](https://github.com/PierreStephaneVoltaire/dev-blog-userAuth)
+![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/dev-blog-userAuth)
+![GitHub last commit](https://img.shields.io/github/last-commit/PierreStephaneVoltaire/dev-blog-userAuth)
+![GitHub](https://img.shields.io/github/license/PierreStephaneVoltaire/dev-blog-userAuth)
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=com.lapots.breed.judge:judge-rule-engine&metric=alert_status)](https://sonarcloud.io/dashboard?id=PierreStephaneVoltaire_dev-blog-userAuth)
+![Sonar Tech Debt](https://img.shields.io/sonar/tech_debt/PierreStephaneVoltaire_dev-blog-userAuth?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/blocker_violations/PierreStephaneVoltaire_dev-blog-userAuth?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/critical_violations/PierreStephaneVoltaire_dev-blog-userAuth?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/major_violations/PierreStephaneVoltaire_dev-blog-userAuth?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/minor_violations/PierreStephaneVoltaire_dev-blog-userAuth?server=https%3A%2F%2Fsonarcloud.io)
+![Sonar Violations (long format)](https://img.shields.io/sonar/info_violations/PierreStephaneVoltaire_dev-blog-userAuth?server=https%3A%2F%2Fsonarcloud.io)
+![GitHub top language](https://img.shields.io/github/languages/top/PierreStephaneVoltaire/dev-blog-userAuth)
+### Description
+This Api manages the congito userpool and allow the user to go through the authentication & Authorisation flow
 #### Stack, Services & Tools
-* TBD
+* C#
+* Dotnet Core
+* Swagger
+* AWS Cognito
+* AWS SES
+* AWS Work mail
 ### Features
 - [ ] User Signin/Signup/Logout flow
 - [ ] forgot password
