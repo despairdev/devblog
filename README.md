@@ -4,11 +4,23 @@
 > https://despairdrivendevelopment.net/
 
 
-This is a "simple" multi-user blog/cms
+This is a developer-focused social platform that allows devs (be it veterans or newcomers) to share their experience, network and discuss on the software industry-related topics
 
 ## Architecture 
-
-
+![devblog](bin/devblog.png)
+I'm currently using multiple service from the aws stack such as:
+* Lambda for calls to the consul endpoint to know the location of other services
+* Lightsail to host my servers :(It was a cheap way to get the project started and i can always upgrade later)
+* RDS for user and post data persistence:
+    * The data structure is mostly consistent
+     * i wanted to avoid redundancy
+     * it's easier for organizing and visualizing data
+ * Dynamodb for read-only version of data
+ * S3 for static site hosting and file storage
+ * r53 and Cloudfont as DNS service and cdn 
+ * Cognito for access control
+ 
+ The Architecture is subject to change
 
 ---
 ## Repositories
