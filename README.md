@@ -38,6 +38,8 @@ I'm currently using multiple service from the aws stack such as:
 ![CI](https://github.com/PierreStephaneVoltaire/dev-blog/workflows/CI/badge.svg)
 ### Description
 This is the main app the user will be interacting with too view posts and interact with various other features of the website.
+## Docs
+http://devblog-landingpage-docs.s3-website.ca-central-1.amazonaws.com/
 #### Stack, Services & Tools
 * Angular
 * Typescript
