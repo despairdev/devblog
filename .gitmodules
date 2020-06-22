@@ -13,3 +13,6 @@
 [submodule "dev-blog-navbar"]
 	path = dev-blog-navbar
 	url = https://github.com/PierreStephaneVoltaire/dev-blog-navbar.git
+[submodule "dev-blog-bucket"]
+	path = dev-blog-bucket
+	url = https://github.com/PierreStephaneVoltaire/dev-blog-bucket.git
