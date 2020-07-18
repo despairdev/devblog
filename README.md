@@ -6,6 +6,42 @@
 > ## Despair Driven Development
 > This is a developer-focused social platform that allows devs (be it veterans or newcomers) to share their experience, network and discuss on the software industry-related topics
 
+Table of Contents
+=================
+
+   * [<a href="https://despairdrivendevelopment.net/" rel="nofollow">Dev-Blog</a>](#dev-blog)
+      * [Despair Driven Development](#despair-driven-development)
+      * [Architecture](#architecture)
+      * [Repositories](#repositories)
+         * [<a href="https://github.com/PierreStephaneVoltaire/dev-blog">Landing Page</a>](#landing-page)
+            * [Description](#description)
+            * [<a href="http://devblog-landingpage-docs.s3-website.ca-central-1.amazonaws.com/" rel="nofollow">Docs</a>](#docs)
+            * [Tech](#tech)
+            * [Cloud Usage](#cloud-usage)
+         * [<a href="https://github.com/PierreStephaneVoltaire/dev-blog-navbar">Navbar</a>](#navbar)
+         * [Description](#description-1)
+            * [Stack, Services &amp; Tools](#stack-services--tools)
+         * [Features](#features)
+         * [<a href="https://github.com/PierreStephaneVoltaire/dev-blog-post-api">Post API</a>](#post-api)
+         * [Description](#description-2)
+            * [Stack, Services &amp; Tools](#stack-services--tools-1)
+         * [Features](#features-1)
+         * [Template API](#template-api)
+            * [Stack, Services &amp; Tools](#stack-services--tools-2)
+         * [Features](#features-2)
+         * [<a href="https://github.com/PierreStephaneVoltaire/dev-blog-userAuth">User Auth API</a>](#user-auth-api)
+         * [Description](#description-3)
+            * [Stack, Services &amp; Tools](#stack-services--tools-3)
+         * [Features](#features-3)
+         * [User Profile Api](#user-profile-api)
+            * [Stack, Services &amp; Tools](#stack-services--tools-4)
+         * [Features](#features-4)
+         * [Search Function](#search-function)
+            * [Stack, Services &amp; Tools](#stack-services--tools-5)
+         * [Features](#features-5)
+
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
+
 ## Architecture 
 
 <details>
@@ -42,17 +78,22 @@ I'm currently using multiple service from the aws stack such as:
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/pvoltaire) ![CI](https://github.com/PierreStephaneVoltaire/dev-blog/workflows/CI/badge.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/PierreStephaneVoltaire/pvoltaire) ![GitHub](https://img.shields.io/github/license/PierreStephaneVoltaire/pvoltaire) ![GitHub top language](https://img.shields.io/github/languages/top/PierreStephaneVoltaire/dev-blog)
 
-#### Stack, Services & Tools
-* Angular
-* Typescript
-* Terraform
-* S3
-* CloudFont
-* R53
-### Features
-- [X] post viewing
-- [ ] Signin/signup
-- [ ] Search
+#### Tech
+
+| Name | Purpose | 
+|------|---------|
+|Angular|Frontend|
+|TypeScript|Language|
+|Terraform|IaC|
+
+#### Cloud Usage
+
+| Name | Cloud | Purpose | 
+|------|---------|-------|
+|S3|AWS|Storage|
+|CloudFront|AWS|CDN|
+|Route53|AWS|DNS|
+
 ### [Navbar](https://github.com/PierreStephaneVoltaire/dev-blog-navbar)
 ![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/dev-blog-navbar)
 ![GitHub last commit](https://img.shields.io/github/last-commit/PierreStephaneVoltaire/dev-blog-navbar)
