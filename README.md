@@ -79,7 +79,7 @@ I'm currently using multiple service from the aws stack such as:
 ![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/pvoltaire) ![CI](https://github.com/PierreStephaneVoltaire/dev-blog/workflows/CI/badge.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/PierreStephaneVoltaire/pvoltaire) ![GitHub](https://img.shields.io/github/license/PierreStephaneVoltaire/pvoltaire) ![GitHub top language](https://img.shields.io/github/languages/top/PierreStephaneVoltaire/dev-blog)
 
 <table>
-<tr><th>#### Tech </th><th>#### Cloud Usage</th></tr>
+<tr><th> <h4>Tech</h4> </th><th> <h4>Cloud Usage</h4></th></tr>
 <tr><td>
 
 | Name | Purpose | 
