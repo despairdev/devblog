@@ -29,11 +29,12 @@ I'm currently using multiple service from the aws stack such as:
  
  The Architecture is subject to change
 
----
-asana
-> https://app.asana.com/0/1177513246019705/board
 ## Repositories
-### [Landing page](https://github.com/PierreStephaneVoltaire/dev-blog)
+
+### [Landing Page](https://github.com/PierreStephaneVoltaire/dev-blog)
+
+<img src="https://angular.io/assets/images/logos/angular/angular.svg" width="40">
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/pvoltaire)
 ![GitHub last commit](https://img.shields.io/github/last-commit/PierreStephaneVoltaire/pvoltaire)
 ![GitHub](https://img.shields.io/github/license/PierreStephaneVoltaire/pvoltaire)
@@ -42,9 +43,12 @@ asana
 ![Sonar Violations (long format)](https://img.shields.io/sonar/blocker_violations/PierreStephaneVoltaire_pvoltaire?server=https%3A%2F%2Fsonarcloud.io)
 ![Sonar Violations (long format)](https://img.shields.io/sonar/critical_violations/PierreStephaneVoltaire_pvoltaire?server=https%3A%2F%2Fsonarcloud.io)
 ![GitHub top language](https://img.shields.io/github/languages/top/PierreStephaneVoltaire/dev-blog)
+
 ![CI](https://github.com/PierreStephaneVoltaire/dev-blog/workflows/CI/badge.svg)
+
 ### Description
 This is the main app the user will be interacting with too view posts and interact with various other features of the website.
+
 ## Docs
 http://devblog-landingpage-docs.s3-website.ca-central-1.amazonaws.com/
 #### Stack, Services & Tools
@@ -133,6 +137,7 @@ This Api manages the congito userpool and allow the user to go through the authe
 * AWS Cognito
 * AWS SES
 * AWS Work mail
+
 ### Features
 - [ ] User Signin/Signup/Logout flow
 - [ ] forgot password
@@ -161,44 +166,3 @@ This Api manages the congito userpool and allow the user to go through the authe
 - [ ] user Search
 - [ ] event Search
 - [ ] Fuzzy Search
-
-### Chat Service
-#### Stack, Services & Tools
-* TBD
-### Features
-* TBD
-
-### User Profile Builder/Viewer
-#### Stack, Services & Tools
-* TBD
-### Features
-* TBD
-
-### CMS Admin Portal
-#### Stack, Services & Tools
-* TBD
-### Features
-* TBD
-
-### Comments service
-#### Stack, Services & Tools
-* TBD
-### Features
-* TBD
-
-### Chatbot Functions
-#### Stack, Services & Tools
-* TBD
-### Features
-* TBD
-### Mail service
-
-#### Stack, Services & Tools
-* TBD
-### Features
-* TBD
-### Event Service
-
-
-
----
