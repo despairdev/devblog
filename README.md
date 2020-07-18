@@ -78,7 +78,9 @@ I'm currently using multiple service from the aws stack such as:
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/pvoltaire) ![CI](https://github.com/PierreStephaneVoltaire/dev-blog/workflows/CI/badge.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/PierreStephaneVoltaire/pvoltaire) ![GitHub](https://img.shields.io/github/license/PierreStephaneVoltaire/pvoltaire) ![GitHub top language](https://img.shields.io/github/languages/top/PierreStephaneVoltaire/dev-blog)
 
-#### Tech
+<table>
+<tr><th>#### Tech </th><th>#### Cloud Usage</th></tr>
+<tr><td>
 
 | Name | Purpose | 
 |------|---------|
@@ -86,13 +88,16 @@ I'm currently using multiple service from the aws stack such as:
 |TypeScript|Language|
 |Terraform|IaC|
 
-#### Cloud Usage
+
+</td><td>
 
 | Name | Cloud | Purpose | 
 |------|---------|-------|
 |S3|AWS|Storage|
 |CloudFront|AWS|CDN|
 |Route53|AWS|DNS|
+
+</td></tr> </table>
 
 ### [Navbar](https://github.com/PierreStephaneVoltaire/dev-blog-navbar)
 ![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/dev-blog-navbar)
