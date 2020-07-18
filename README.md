@@ -6,8 +6,8 @@
 > ## Despair Driven Development
 > This is a developer-focused social platform that allows devs (be it veterans or newcomers) to share their experience, network and discuss on the software industry-related topics
 
-Table of Contents
-=================
+<details>
+<summary>Table of Contents</summary>
 
    * [<a href="https://despairdrivendevelopment.net/" rel="nofollow">Dev-Blog</a>](#dev-blog)
       * [Despair Driven Development](#despair-driven-development)
@@ -40,7 +40,7 @@ Table of Contents
             * [Stack, Services &amp; Tools](#stack-services--tools-5)
          * [Features](#features-5)
 
-Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
+</details>
 
 ## Architecture 
 
