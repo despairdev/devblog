@@ -33,24 +33,20 @@ I'm currently using multiple service from the aws stack such as:
 
 ### [Landing Page](https://github.com/PierreStephaneVoltaire/dev-blog)
 
-<img src="https://angular.io/assets/images/logos/angular/angular.svg" width="40">
+[<img src="https://angular.io/assets/images/logos/angular/angular.svg" width="40">](https://angular.io)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/pvoltaire)
-![GitHub last commit](https://img.shields.io/github/last-commit/PierreStephaneVoltaire/pvoltaire)
-![GitHub](https://img.shields.io/github/license/PierreStephaneVoltaire/pvoltaire)
-[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=com.lapots.breed.judge:judge-rule-engine&metric=alert_status)](https://sonarcloud.io/dashboard?id=PierreStephaneVoltaire_pvoltaire)
-![Sonar Tech Debt](https://img.shields.io/sonar/tech_debt/PierreStephaneVoltaire_pvoltaire?server=https%3A%2F%2Fsonarcloud.io)
-![Sonar Violations (long format)](https://img.shields.io/sonar/blocker_violations/PierreStephaneVoltaire_pvoltaire?server=https%3A%2F%2Fsonarcloud.io)
-![Sonar Violations (long format)](https://img.shields.io/sonar/critical_violations/PierreStephaneVoltaire_pvoltaire?server=https%3A%2F%2Fsonarcloud.io)
-![GitHub top language](https://img.shields.io/github/languages/top/PierreStephaneVoltaire/dev-blog)
+> #### Description
+> This is the main app the user will be interacting with too view posts and interact with various other features of the website.
 
-![CI](https://github.com/PierreStephaneVoltaire/dev-blog/workflows/CI/badge.svg)
+#### [Docs](http://devblog-landingpage-docs.s3-website.ca-central-1.amazonaws.com/)
 
-### Description
-This is the main app the user will be interacting with too view posts and interact with various other features of the website.
+| Repo Info | Sonar | CI |
+|------|------|------|
+|![GitHub repo size](https://img.shields.io/github/repo-size/PierreStephaneVoltaire/pvoltaire)|[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=com.lapots.breed.judge:judge-rule-engine&metric=alert_status)](https://sonarcloud.io/dashboard?id=PierreStephaneVoltaire_pvoltaire)|![CI](https://github.com/PierreStephaneVoltaire/dev-blog/workflows/CI/badge.svg)|
+|![GitHub last commit](https://img.shields.io/github/last-commit/PierreStephaneVoltaire/pvoltaire)|![Sonar Tech Debt](https://img.shields.io/sonar/tech_debt/PierreStephaneVoltaire_pvoltaire?server=https%3A%2F%2Fsonarcloud.io)||
+|![GitHub](https://img.shields.io/github/license/PierreStephaneVoltaire/pvoltaire)|![Sonar Violations (long format)](https://img.shields.io/sonar/blocker_violations/PierreStephaneVoltaire_pvoltaire?label=Blocker+Violations&server=https%3A%2F%2Fsonarcloud.io)||
+|![GitHub top language](https://img.shields.io/github/languages/top/PierreStephaneVoltaire/dev-blog)|![Sonar Violations (long format)](https://img.shields.io/sonar/critical_violations/PierreStephaneVoltaire_pvoltaire?label=Critical+Violations&server=https%3A%2F%2Fsonarcloud.io)||
 
-## Docs
-http://devblog-landingpage-docs.s3-website.ca-central-1.amazonaws.com/
 #### Stack, Services & Tools
 * Angular
 * Typescript
