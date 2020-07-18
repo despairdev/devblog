@@ -1,13 +1,20 @@
-# Dev-Blog
+# [Dev-Blog](https://despairdrivendevelopment.net/)
 
-### despair driven development ![Website](https://img.shields.io/website?url=http%3A%2F%2Fdespairdrivendevelopment.net)
-> https://despairdrivendevelopment.net/
+[![Despair](https://img.shields.io/website?label=Despair&url=http%3A%2F%2Fdespairdrivendevelopment.net)](https://despairdrivendevelopment.net)
+[![Asana](https://img.shields.io/badge/Asana-Board-blue)](https://app.asana.com/0/1177513246019705/board)
 
-
-This is a developer-focused social platform that allows devs (be it veterans or newcomers) to share their experience, network and discuss on the software industry-related topics
+> ## Despair Driven Development
+> This is a developer-focused social platform that allows devs (be it veterans or newcomers) to share their experience, network and discuss on the software industry-related topics
 
 ## Architecture 
-![devblog](bin/devblog.png)
+
+<details>
+<summary>Diagram</summary>
+
+![Architecture](bin/devblog.png)
+
+</details>
+
 I'm currently using multiple service from the aws stack such as:
 * Lambda for calls to the consul endpoint to know the location of other services
 * Lightsail to host my servers :(It was a cheap way to get the project started and i can always upgrade later)
@@ -23,7 +30,7 @@ I'm currently using multiple service from the aws stack such as:
  The Architecture is subject to change
 
 ---
-## asana
+asana
 > https://app.asana.com/0/1177513246019705/board
 ## Repositories
 ### [Landing page](https://github.com/PierreStephaneVoltaire/dev-blog)
