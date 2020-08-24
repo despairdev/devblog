@@ -54,7 +54,8 @@
           postAPI = pkgs.releaseTools.nixBuild {
             name = "dockerImage-postAPI";
             src = null;
-            postInstall = ''
+            phases = [ "install" ];
+            installPhase = ''
               cp ${self.dockerImages.postAPI} $out/nix-support/hydra-build-products
             '';
           };
