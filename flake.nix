@@ -35,7 +35,7 @@
           name = "devblog/postAPI";
           tag = "latest";
 
-          contents = [ self.packages.x86_64-linux.postAPI ];
+          contents = [ self.packages.x86_64-linux.postAPI pkgs.bashInteractive ];
         };
       };
 
