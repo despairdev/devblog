@@ -51,7 +51,7 @@
 
       hydraJobs = {
         build = {
-          postAPI = release.nixBuild {
+          postAPI = pkgs.releaseTools.nixBuild {
             name = "dockerImage-postAPI";
             src = null;
             postInstall = ''
