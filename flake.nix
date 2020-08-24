@@ -51,11 +51,12 @@
 
       hydraJobs = {
         build = {
-          postAPI = pkgs.releaseTools.nixBuild {
+          postAPI = pkgs.stdenv.mkDerivation {
             name = "dockerImage-postAPI";
             src = null;
             phases = [ "install" ];
             installPhase = ''
+              mkdir -p $out/nix-support
               cp ${self.dockerImages.postAPI} $out/nix-support/hydra-build-products
             '';
           };
