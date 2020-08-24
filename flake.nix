@@ -12,7 +12,21 @@
         sha256 = "11wqrg86g3qva67vnk81ynvqyfj0zxk83cbrf0p9hsvxiwxs8469";
       });
 
-      pkgs = (import nixpkgs {
+      pkgs' = (import nixpkgs {
+        system = "x86_64-linux";
+        config = { allowUnfree = true; };
+        overlays = [ moz_overlay ];
+      });
+
+      pkgsPatched = pkgs'.applyPatches {
+        name = "nixpkgs-patched";
+        src = nixpkgs;
+        patches = [
+          ./switch_to_kvm.patch
+        ];
+      };
+
+      pkgs = (import pkgsPatched {
         system = "x86_64-linux";
         config = { allowUnfree = true; };
         overlays = [ moz_overlay ];
@@ -55,7 +69,7 @@
       hydraJobs = {
         tests.postAPI = let
           testing =
-            (pkgs.callPackage "${nixpkgs}/nixos/lib/testing-python.nix" {});
+            (pkgs.callPackage "${pkgsPatched}/nixos/lib/testing-python.nix" {});
         in pkgs.callPackage ./tests.nix {
           makeTest = testing.makeTest;
           dockerImages = self.dockerImages;

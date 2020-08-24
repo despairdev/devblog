@@ -1,0 +1,29 @@
+diff --git a/nixos/lib/qemu-flags.nix b/nixos/lib/qemu-flags.nix
+index 859d9e975fe..774f66b4804 100644
+--- a/nixos/lib/qemu-flags.nix
++++ b/nixos/lib/qemu-flags.nix
+@@ -17,9 +17,9 @@ in
+         else throw "Unknown QEMU serial device for system '${pkgs.stdenv.hostPlatform.system}'";
+
+   qemuBinary = qemuPkg: {
+-    x86_64-linux = "${qemuPkg}/bin/qemu-kvm -cpu host";
++    x86_64-linux = "${qemuPkg}/bin/qemu-kvm -cpu kvm64";
+     armv7l-linux = "${qemuPkg}/bin/qemu-system-arm -enable-kvm -machine virt -cpu host";
+     aarch64-linux = "${qemuPkg}/bin/qemu-system-aarch64 -enable-kvm -machine virt,gic-version=host -cpu host";
+-    x86_64-darwin = "${qemuPkg}/bin/qemu-kvm -cpu host";
++    x86_64-darwin = "${qemuPkg}/bin/qemu-kvm -cpu kvm64";
+   }.${pkgs.stdenv.hostPlatform.system} or "${qemuPkg}/bin/qemu-kvm";
+ }
+diff --git a/nixos/tests/installer.nix b/nixos/tests/installer.nix
+index 983861911e0..23b440e6011 100644
+--- a/nixos/tests/installer.nix
++++ b/nixos/tests/installer.nix
+@@ -74,7 +74,7 @@ let
+       throw "Non-EFI boot methods are only supported on i686 / x86_64"
+     else ''
+       def assemble_qemu_flags():
+-          flags = "-cpu host"
++          flags = "-cpu kvm64"
+           ${if system == "x86_64-linux"
+             then ''flags += " -m 768"''
+             else ''flags += " -m 512 -enable-kvm -machine virt,gic-version=host"''
