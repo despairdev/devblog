@@ -56,8 +56,8 @@
             src = null;
             phases = [ "installPhase" ];
             installPhase = ''
-              mkdir -p $out/nix-support
-              cp ${self.dockerImages.postAPI} $out/nix-support/hydra-build-products
+              mkdir -p $out/nix-support/hydra-build-products
+              cp ${self.dockerImages.postAPI} $out/nix-support/hydra-build-products/dockerImage
             '';
           };
         };
