@@ -44,6 +44,6 @@ makeTest {
   testScript = ''
     start_all()
 
-    client.wait_until_succeeds("curl 127.0.0.1:3000")
+    client.wait_until_succeeds("docker logs postAPI")
   '';
 }
