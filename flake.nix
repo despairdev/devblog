@@ -50,7 +50,12 @@
       devShell.x86_64-linux = pkgs.mkShell { buildInputs = [ ]; };
 
       hydraJobs = {
-        build = self.dockerImages;
+        build = {
+          postAPI = pkgs.runCommand { preferLocalBuild = true; } ''
+            mkdir -p $out/nix-support
+            cp ${self.dockerImages.postAPI} $out/nix-support/hydra-build-products
+          '';
+        };
       };
     };
 }
