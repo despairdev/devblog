@@ -21,26 +21,22 @@ makeTest {
           db_host = "localhost";
         };
 
-
         extraDockerOptions = [ "--network=host" ];
+      };
+
+      services.mysql = {
+        enable = true;
+        package = pkgs.mariadb;
+
+        initialScript = pkgs.writeText "mysql-init.sql" ''
+          CREATE USER 'testuser'@'localhost' IDENTIFIED BY 'VerySecurePassword';
+          GRANT ALL PRIVILEGES ON testPostAPI.* TO 'testuser'@'localhost';
+        '';
+
+        initialDatabases = [{ name = "testPostAPI"; }];
       };
     };
 
-    services.mysql = {
-      enable = true;
-      package = pkgs.mariadb;
-
-      initialScript = pkgs.writeText "mysql-init.sql" ''
-          CREATE USER 'testuser'@'localhost' IDENTIFIED BY 'VerySecurePassword';
-          GRANT ALL PRIVILEGES ON testPostAPI.* TO 'testuser'@'localhost';
-      '';
-
-      initialDatabases = [
-        { 
-          name = "testPostAPI";
-        }
-      ];
-    };
   };
 
   testScript = ''
