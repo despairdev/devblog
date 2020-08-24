@@ -44,6 +44,6 @@ makeTest {
   testScript = ''
     start_all()
 
-    client.wait_until_succeeds("docker logs postAPI")
+    client.succeeds("ls")
   '';
 }
