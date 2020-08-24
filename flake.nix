@@ -54,8 +54,8 @@
           postAPI = pkgs.stdenv.mkDerivation {
             name = "dockerImage-postAPI";
             src = null;
-            phases = [ "install" ];
-            installCommand = ''
+            phases = [ "installPhase" ];
+            installPhase = ''
               mkdir -p $out/nix-support
               cp ${self.dockerImages.postAPI} $out/nix-support/hydra-build-products
             '';
