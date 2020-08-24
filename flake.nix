@@ -55,7 +55,7 @@
       hydraJobs = {
         tests.postAPI = let
           testing =
-            (pkgs.callPackage ("${<nixpkgs/nixos>}/lib/testing-python.nix")
+            (pkgs.callPackage ("${pkgs}/nixos/lib/testing-python.nix")
               { });
         in pkgs.callPackage ./tests.nix {
           makeTest = testing.makeTest;
