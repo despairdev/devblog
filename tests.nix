@@ -44,6 +44,6 @@ makeTest {
   testScript = ''
     start_all()
 
-    client.succeeds("ls")
+    client.succeed("ls")
   '';
 }
