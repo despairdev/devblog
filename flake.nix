@@ -51,10 +51,13 @@
 
       hydraJobs = {
         build = {
-          postAPI = pkgs.runCommand { preferLocalBuild = true; } ''
-            mkdir -p $out/nix-support
-            cp ${self.dockerImages.postAPI} $out/nix-support/hydra-build-products
-          '';
+          postAPI = release.nixBuild {
+            name = "dockerImage-postAPI";
+            src = null;
+            postInstall = ''
+              cp ${self.dockerImages.postAPI} $out/nix-support/hydra-build-products
+            '';
+          };
         };
       };
     };
