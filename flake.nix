@@ -57,7 +57,8 @@
             phases = [ "installPhase" ];
             installPhase = ''
               mkdir -p $out/nix-support
-              echo "file cov-build ${self.dockerImages.postAPI}" > $out/nix-support/hydra-build-products
+              cp ${self.dockerImages.postAPI} $out/dockerImage
+              echo "file binary-dist $out/dockerImage" > $out/nix-support/hydra-build-products
             '';
           };
         };
