@@ -49,6 +49,6 @@
 
       devShell.x86_64-linux = pkgs.mkShell { buildInputs = [ ]; };
 
-      hydraJobs = { dockerImages = self.dockerImage.postAPI; };
+      hydraJobs = { dockerImages = self.dockerImages; };
     };
 }
