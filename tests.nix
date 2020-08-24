@@ -6,6 +6,8 @@ makeTest {
   nodes = {
     client = { pkgs, lib, ... }: {
 
+      environment.systemPackages = [ pkgs.curl ];
+
       services.redis.enable = true;
 
       docker-containers.postAPI = {
