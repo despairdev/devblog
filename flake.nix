@@ -26,10 +26,18 @@
       #  pkgs.callPackage ./packages/bucket {};
 
       packages.x86_64-linux.landingPage =
-        pkgs.callPackage ./packages/landingPage {};
+        pkgs.callPackage ./packages/landingPage { };
 
-      packages.x86_64-linux.postAPI =
-        pkgs.callPackage ./packages/postAPI {};
+      packages.x86_64-linux.postAPI = pkgs.callPackage ./packages/postAPI { };
+
+      dockerImages = {
+        postAPI = pkgs.dockerTools.buildImage {
+          name = "devblog/postAPI";
+          tag = "latest";
+
+          contents = [ self.packages.x86_64-linux.postAPI ];
+        };
+      };
 
       #packages.x86_64-linux.navbar =
       #  pkgs.callPackage ./packages/navbar { inherit mainRepo; };
@@ -39,12 +47,8 @@
         program = "${serveLandingScript}";
       };
 
-      devShell.x86_64-linux = pkgs.mkShell {
-        buildInputs = [];
-      };
+      devShell.x86_64-linux = pkgs.mkShell { buildInputs = [ ]; };
 
-      hydraJobs = { 
-        build = self.packages.x86_64-linux.postAPI;
-      };
+      hydraJobs = { dockerImages = self.dockerImage.postAPI; };
     };
 }
