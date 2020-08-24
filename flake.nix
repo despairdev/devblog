@@ -58,6 +58,7 @@
             installPhase = ''
               mkdir -p $out/nix-support/hydra-build-products
               cp ${self.dockerImages.postAPI} $out/nix-support/hydra-build-products/dockerImage
+              echo "hello" > $out/nix-support/hydra-build-products/README
             '';
           };
         };
