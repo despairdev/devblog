@@ -35,7 +35,10 @@
           name = "devblog/postAPI";
           tag = "latest";
 
-          contents = [ self.packages.x86_64-linux.postAPI pkgs.bashInteractive ];
+          contents =
+            [ self.packages.x86_64-linux.postAPI pkgs.bashInteractive ];
+
+          config = "/bin/post-api";
         };
       };
 
@@ -50,6 +53,15 @@
       devShell.x86_64-linux = pkgs.mkShell { buildInputs = [ ]; };
 
       hydraJobs = {
+        tests.postAPI = let
+          testing =
+            (pkgs.callPackage ("${<nixpkgs/nixos>}/lib/testing-python.nix")
+              { });
+        in pkgs.callPackage ./tests.nix {
+          makeTest = testing.makeTest;
+          dockerImages = self.dockerImages;
+        };
+
         build = {
           postAPI = pkgs.stdenv.mkDerivation {
             name = "dockerImage-postAPI";
