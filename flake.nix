@@ -43,6 +43,8 @@
         buildInputs = [];
       };
 
-      hydraJobs = self.packages.x86_64-linux.postAPI;
+      hydraJobs = { 
+        build = self.packages.x86_64-linux.postAPI;
+      };
     };
 }
