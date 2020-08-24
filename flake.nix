@@ -55,7 +55,7 @@
             name = "dockerImage-postAPI";
             src = null;
             phases = [ "install" ];
-            installPhase = ''
+            installCommand = ''
               mkdir -p $out/nix-support
               cp ${self.dockerImages.postAPI} $out/nix-support/hydra-build-products
             '';
