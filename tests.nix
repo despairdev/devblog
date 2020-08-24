@@ -6,6 +6,7 @@ makeTest {
   nodes = {
     client = { pkgs, lib, ... }: {
       docker-containers.postAPI = {
+        image = "devblog/postAPI:latest";
         imageFile = dockerImages.postAPI;
         extraDockerOptions = [ "--network=host" ];
       };
